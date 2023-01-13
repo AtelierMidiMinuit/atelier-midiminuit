@@ -1,0 +1,58 @@
+/* NOTE: OK  */.text-very-small {font-size:18px; line-height:25px; font-weight: 300;font-style: italic;padding-top:40px}
+/* NOTE: OK  */.text-small {font-size:22px; line-height:50px; font-weight: 300}
+/* NOTE: OK  */.text-nomprojet{font-size:60px; line-height:68px; font-weight:450;letter-spacing:-3px }
+/* NOTE: OK  */.text-titre{font-size:100px; line-height:90px; font-weight:600;letter-spacing:-3px;}
+/* NOTE: OK  */.text-courant-info{font-size:18px; line-height:25px;font-weight:400;}
+/* NOTE: OK  */.text-courant{font-size:20px; line-height:28px;font-weight:400;}
+/* NOTE: OK  */.text-logo{font-size:30px; line-height:0px;font-weight:500;text-align:left;}
+/* NOTE: OK  */.text-PN{font-size:32px; line-height:30px;font-weight:400;;}
+/* NOTE: OK  */.text-footer{font-size:50px; line-height:40px;font-weight:400;color:white;decoration:none}
+/* NOTE: OK  */.text-index{font-size:70px; line-height:40px;font-weight:400;}
+/* NOTE: OK  */.text-infos{font-size:30px; line-height:0px;font-weight:500;text-align:right;}
+
+.t300{font-weight:300}
+.t400{font-weight:400}
+.t450{font-weight:450}
+.t500{font-weight:500}
+.t600{font-weight:600}
+
+/* ===================================
+                 xs
+====================================== */
+
+@media(max-width:1280px){
+
+/* NOTE: OK  */.text-very-small {font-size:15px; line-height:20px; font-weight: 300;font-style: italic; padding-top:40px}
+/* NOTE: OK  */.text-small { font-size:12px; line-height:30px }
+/* NOTE: OK  */.text-titre{font-size:55px; line-height:48px; font-weight:400;}
+/* NOTE: OK  */.text-courant{font-size:18px; line-height:26px;font-weight:350;}
+/* NOTE: OK  */.text-logo{font-size:25px;line-height:0px ;font-weight:500;text-align:left;}
+/* NOTE: OK  */.text-PN{font-size:20px; line-height:40px;font-weight:400;}
+/* NOTE: OK  */.text-footer{font-size:35px; line-height:40px;font-weight:400;;}
+/* NOTE: OK  */.text-nomprojet{font-size:40px; line-height:35px; font-weight:450;letter-spacing: -1px}
+/* NOTE: OK  */.text-infos{font-size:25px;line-height:0px ;font-weight:500;text-align:right;}
+
+.projetintro{padding-top:20px }
+
+}
+
+
+
+.row-w{
+  width:100%;
+
+
+}
+@media(max-width:1280px){
+
+  .grid.grid-6col li { width: 100%; }
+  .grid.grid-6col li.grid-item-4 { width: 100%; }
+
+
+  @media(max-width:769px){
+
+    /* NOTE: OK  */.text-logo{font-size:25px;line-height:0px ;font-weight:500;text-align:left;}
+        /* NOTE: OK  */.text-infos{font-size:25px;line-height:0px ;font-weight:500;text-align:right;}
+
+
+  }
