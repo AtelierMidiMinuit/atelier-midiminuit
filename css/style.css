@@ -1,5 +1,7 @@
 @charset "UTF-8";
-
+.body{
+  background-color: pink;
+}
 .menu-align{
 z-index: 1;
 padding-top: 10px;
