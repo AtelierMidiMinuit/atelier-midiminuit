@@ -1,3 +1,51 @@
+@font-face {
+  font-family: 'Silka';
+  src: url(../font/silka-medium-webfont.woff);
+  src: url(../font/silka-medium-webfont.woff2);
+  src: url(../font/silka-medium-webfont.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Silka';
+  src: url(../font/silka-light-webfont.woff);
+  src: url(../font/silka-light-webfont.woff2);
+  src: url(../font/silka-light-webfont.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Everett';
+  src: url(../font/Everett-Regular.otf);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Basier';
+  src: url(../font/basiercircle-regular-webfont.woff2);
+  src: url(../font/basiercircle-regular-webfont.woff);
+  src: url(../font/basiercircle-regular-webfont.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+
+body{
+}
+
+.header_text{
+  font-family:'Basier';
+  color: black;
+  font-size: 22px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+
+
 /* NOTE: OK  */.text-very-small {font-size:18px; line-height:25px; font-weight: 300;font-style: italic;padding-top:40px}
 /* NOTE: OK  */.text-small {font-size:22px; line-height:50px; font-weight: 300}
 /* NOTE: OK  */.text-nomprojet{font-size:60px; line-height:68px; font-weight:450;letter-spacing:-3px }
