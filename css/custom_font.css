@@ -1,22 +1,4 @@
 @font-face {
-  font-family: 'Silka';
-  src: url(../font/silka-medium-webfont.woff);
-  src: url(../font/silka-medium-webfont.woff2);
-  src: url(../font/silka-medium-webfont.ttf);
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Silka';
-  src: url(../font/silka-light-webfont.woff);
-  src: url(../font/silka-light-webfont.woff2);
-  src: url(../font/silka-light-webfont.ttf);
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'Everett';
   src: url(../font/Everett-Regular.otf);
   font-weight: 300;
@@ -32,18 +14,65 @@
   font-style: normal;
 }
 
-body{
-}
-
 .header_text{
   font-family:'Basier';
-  color: black;
   font-size: 22px;
   padding-left: 15px;
   padding-right: 15px;
 }
 
+.card-title{
+  font-family: 'Everett';
+  font-size: 50px;
+  line-height: 55px;
+  text-transform: uppercase;
+  letter-spacing: -2px;
 
+}
+
+
+
+/* NOTE: SCROLL images */
+
+img{
+  width: 10%;
+}
+
+.part2{
+  position: absolute;
+  top:100%;
+  right: 3%;
+  width: 15%;
+}
+.part3{
+  position: absolute;
+  top:160%;
+  right: 5%;
+  width: 15%;
+}
+.part4{
+  position: absolute;
+  top:160%;
+  right: 15%;
+  width: 20%;
+}
+.part5{
+  position: absolute;
+  top:190%;
+  right: 5%;
+  width: 10%;
+}
+
+.part6{
+  position: absolute;
+  top:240%;
+  right: 5%;
+  width: 10%;
+}
+
+
+
+.text-separator{font-family: 'Everett', sans-serif;text-align:left;font-size: 90px;line-height: 90px;letter-spacing:-2px;text-transform: uppercase;}
 
 
 /* NOTE: OK  */.text-very-small {font-size:18px; line-height:25px; font-weight: 300;font-style: italic;padding-top:40px}
@@ -51,18 +80,13 @@ body{
 /* NOTE: OK  */.text-nomprojet{font-size:60px; line-height:68px; font-weight:450;letter-spacing:-3px }
 /* NOTE: OK  */.text-titre{font-size:100px; line-height:90px; font-weight:600;letter-spacing:-3px;}
 /* NOTE: OK  */.text-courant-info{font-size:18px; line-height:25px;font-weight:400;}
-/* NOTE: OK  */.text-courant{font-size:20px; line-height:28px;font-weight:400;}
+/* NOTE: OK  */.text-courant{font-family: 'Basier';font-size:20px; line-height:28px;letter-spacing: -1px;}
 /* NOTE: OK  */.text-logo{font-size:30px; line-height:0px;font-weight:500;text-align:left;}
 /* NOTE: OK  */.text-PN{font-size:32px; line-height:30px;font-weight:400;;}
 /* NOTE: OK  */.text-footer{font-size:50px; line-height:40px;font-weight:400;color:white;decoration:none}
 /* NOTE: OK  */.text-index{font-size:70px; line-height:40px;font-weight:400;}
 /* NOTE: OK  */.text-infos{font-size:30px; line-height:0px;font-weight:500;text-align:right;}
 
-.t300{font-weight:300}
-.t400{font-weight:400}
-.t450{font-weight:450}
-.t500{font-weight:500}
-.t600{font-weight:600}
 
 /* ===================================
                  xs
@@ -91,10 +115,16 @@ body{
 
 
 }
+
+.logo_svg{
+  width:200px;
+}
 @media(max-width:1280px){
 
   .grid.grid-6col li { width: 100%; }
   .grid.grid-6col li.grid-item-4 { width: 100%; }
+
+  .logo_svg {width:150px}
 
 
   @media(max-width:769px){

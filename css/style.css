@@ -1,7 +1,5 @@
 @charset "UTF-8";
-.body{
-font-size: 100%;
-}
+
 
 .menu-align{
 z-index: 1;
@@ -18,8 +16,11 @@ padding-top: 10px;
   padding: 16px;
   font-size: 18px;
   border: none;
+
   text-align: left;
+
   min-width: 100px;
+
   margin: 0 auto;
 }
 
@@ -31,8 +32,10 @@ padding-top: 10px;
 
 .dropdown-content {
   display: none;
+
   text-align: left;
   position: absolute;
+
   background-color: black;
   color:white;
   min-width: 300px;
@@ -49,12 +52,12 @@ padding-top: 10px;
 }
 
 .dropdown-content a:hover {background-color: black;}
+
 .dropdown:hover .dropdown-content {display: block;}
+
 .dropdown:hover .dropbtn {background-color: black;}
 
-
-
-.image-hover-text{
+.image-hover-text {
   position: absolute;
   top: 0;
   width: 100%;
@@ -63,7 +66,9 @@ padding-top: 10px;
   opacity: 0;
   transition: opacity 0.2s linear;
   background: rgba(0, 0, 0, 0.8);
+  blur:
   text-decoration: none;
+
 }
 
 .image-hover-text:hover{
@@ -81,7 +86,7 @@ padding-top: 10px;
 }
 
 
-.image-hover-text-bubble{
+.image-hover-text-bubble {
   box-sizing: border-box;
   vertical-align: middle;
   text-align: center;
@@ -100,10 +105,9 @@ padding-top: 10px;
   display: block;
 }
 
-
 .bloc_text_left {
-  height: 80px;
-  width: 100%;
+  height: 82px;
+  width: 100vw;
   padding: no-padding;
   overflow: hidden;
   position: relative;
@@ -113,23 +117,21 @@ padding-top: 10px;
 .bloc_text_left div {
   display: block;
   width: 200vw;
-  height: 88px;
-  color:black;
-  padding: 0px;
+  height: 82px;
+  padding-top:px;
   position: absolute;
   overflow: hidden;
-  -webkit-animation: bloc_text_left 20s linear infinite;
-          animation: bloc_text_left 20s linear infinite;
+  -webkit-animation: bloc_text_left 25s linear infinite;
+          animation: bloc_text_left 25s linear infinite;
 
 }
 
 .bloc_text_left span {
   float: left;
   width: 50%;
-  font-size: 87px;
-  letter-spacing: 4px;
-  line-height: 95px;
-}
+  font-size: 90px;
+  line-height: 90px;
+  letter-spacing: 2px;}
 
 @-webkit-keyframes bloc_text_left {
   0% { left: 0; }
@@ -145,8 +147,8 @@ padding-top: 10px;
 
 
 .bloc_text_right {
-  height: 80px;
-  width: 100%;
+  height: 82px;
+  width: 100vw;
   padding: no-padding;
   overflow: hidden;
   position: relative;
@@ -156,20 +158,20 @@ padding-top: 10px;
 .bloc_text_right div {
   display: block;
   width: 200vw;
-  height: 88px;
-  color:black;
-  padding: 0px;
+  height: 82px;
+  padding-top:px;
   position: absolute;
   overflow: hidden;
   -webkit-animation: bloc_text_right 25s linear infinite;
-          animation: bloc_text_right 25s linear infinite;}
+          animation: bloc_text_right 25s linear infinite;
+}
 
 .bloc_text_right span {
   float: left;
   width: 50%;
-  font-size: 87px;
-  letter-spacing: 4px;
-  line-height: 95px;
+  font-size: 90px;
+  line-height: 90px;
+  letter-spacing: 2px;
 }
 
 @-webkit-keyframes bloc_text_right {
@@ -183,18 +185,64 @@ padding-top: 10px;
 }
 
 
+/* NOTE: CURSOR */
 
 
-.text{
+.cursor-back{
+  cursor: url('../back.svg') 30 30, auto;
+  transform: translateY();
+}
+
+
+
+
+/* NOTE: BLOC RETOUR CAS */
+
+.container-wrapper{
+  padding:0 0 0 50px
+}
+
+.scrolling-wrapper {
+  cursor: url('../double.svg') 30 30, auto;
   display: flex;
-  float: left;
-  font-size:27px;
-  padding-top:60px;
+  margin: auto;
+  flex-wrap: nowrap;
+  padding-top: 50px;
+  padding-left: 50px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
 }
 
-.text_flex{
-  width:40vw;
+  .card {
+    flex: 0 0 auto;
+    margin: 10px;
+    width: 30%;
+    max-width: 400px;
+    border: none;
+    padding: 10px;
+    padding-bottom:50px;
+    margin-right: 100px;
+    text-align: left;
+  }
 }
+
+@media and all (max-width: 1200px) {
+  .scrolling-wrapper {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    scroll-behavior: smooth;
+
+  }
+    .card {
+      width: 100%;
+      max-width: none;
+    }
+  }
+}
+
+
+
 
 
 /* ----------------------------------
@@ -238,12 +286,6 @@ Table of contents
 
 /* ===================================
     01. Google font
-====================================== */
-
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
-
-/* ===================================
     02. Reset
 ====================================== */
 html {font-size: 15px;}
@@ -265,10 +307,6 @@ p {margin: 0 0 25px}
 b, strong {font-weight: 600;}
 .last-paragraph-no-margin p:last-of-type {margin-bottom:0}
 .alt-font strong {font-weight: 700}
-ul, ol, dl {list-style-position: outside; margin-bottom: 25px}
-*{transition-timing-function: ease-in-out; -ms-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -webkit-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out; transition-duration: .2s; -ms-transition-duration: .2s; -moz-transition-duration: .2s; -webkit-transition-duration: .2s; -o-transition-duration: .2s;}
-*:hover{transition-timing-function: ease-in-out; -ms-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -webkit-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out; transition-duration: .2s; -ms-transition-duration: .2s; -moz-transition-duration: .2s; -webkit-transition-duration: .2s; -o-transition-duration: .2s;}
-.no-transition *, .swiper-container *, .mfp-container *, .portfolio-wrapper *, .parallax, .rev-slider *, .header-searchbar *, .header-social-icon *, .dropdropdown-menu * {transition-timing-function: none; -moz-transition-timing-function: none; -webkit-transition-timing-function: none; -o-transition-timing-function: none; -ms-transition-timing-function: none; transition-duration: 0s; -moz-transition-duration: 0s; -webkit-transition-duration: 0s; -o-transition-duration: 0s; -ms-transition-duration: 0s;}
 ::selection {color: #000; background:#dbdbdb;}
 ::-moz-selection {color:#000; background:#dbdbdb;}
 ::-webkit-input-placeholder {color: #6f6f6f; text-overflow: ellipsis;}
@@ -283,9 +321,7 @@ ul, ol, dl {list-style-position: outside; margin-bottom: 25px}
 header [class^="container-"] [class^="col-"], header [class^="container-"] [class*=" col-"] {position: relative; padding-left: 15px; padding-right: 15px;}
 .swiper-container { z-index: 1; }
 
-@media (prefers-reduced-motion:no-preference) {
-    :root {scroll-behavior: auto}
-}
+
 
 /* base color variable*/
 :root {--base-color: #ff214f;}
@@ -805,8 +841,6 @@ textarea.input-bg {background-color: #f7f7f7; border-radius: 4px; border: 1px so
 /* ===================================
     10. Background image
 ====================================== */
-
-.parallax {position: relative !important; background-size: cover !important; overflow: hidden; background-attachment: fixed !important; transition-duration: 0s; -moz-transition-duration: 0s; -webkit-transition-duration: 0s; -o-transition-duration: 0s;}
 .fix-background {background-attachment: fixed !important; background-position: center center; background-repeat: no-repeat; background-size: cover !important; overflow: hidden; position: relative; transition-duration: 0.2s; transition-timing-function: ease-in;}
 .cover-background {position: relative !important; background-size: cover !important; overflow: hidden !important; background-position: center !important; background-repeat: no-repeat !important;}
 .background-size-inherit {background-size: inherit}
@@ -3500,8 +3534,6 @@ figure{margin: 0;}
 .feature-box-8:hover .feature-box-overlay {height: 100%; background: #2f2f2f}
 .feature-box-8:hover div, .feature-box-8:hover p {color: #fff;}
 .feature-box-8:hover .icon-round-small{background: #fff; color: var(--base-color) !important;}
-.parallax-feature-box-bottom {position: absolute; bottom:-150%;}
-.parallax-feature-box {overflow: visible}
 
 /* feature box style 9 */
 .feature-box-9 i {position: relative; transition: all 0.3s ease 0s; -webkit-transition: all 0.3s ease 0s; -moz-transition: all 0.3s ease 0s; -ms-transition: all 0.3s ease 0s; -o-transition: all 0.3s ease 0s; top:0}
@@ -4015,8 +4047,6 @@ aside .instafeed-grid.gutter-extra-large, footer .instafeed-grid.gutter-extra-la
 /* home - portfolio metro */
 .text-bold-underline:before {background-color: var(--base-color); height: 3px; width: 100%; position: absolute; right: 0; bottom:5px; content: "";}
 
-/* home - portfolio  parallax */
-.parallax-title {padding: 16px 35px; display: inline-block}
 
 /* home - blog grid */
 .highlight-bg-text {padding: 5px 16px; display: inline-block; margin-bottom: 15px;}
