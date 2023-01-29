@@ -14,65 +14,17 @@
   font-style: normal;
 }
 
-.header_text{
-  font-family:'Basier';
-  font-size: 22px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 
-.card-title{
-  font-family: 'Everett';
-  font-size: 50px;
-  line-height: 55px;
-  text-transform: uppercase;
-  letter-spacing: -2px;
+/* HEADER */
+.header_text{font-family:'Basier';font-size: 24px;  padding-left: 15px;  padding-right: 15px;;}
 
-}
-
-
-
-/* NOTE: SCROLL images */
-
-img{
-  width: 10%;
-}
-
-.part2{
-  position: absolute;
-  top:100%;
-  right: 3%;
-  width: 15%;
-}
-.part3{
-  position: absolute;
-  top:160%;
-  right: 5%;
-  width: 15%;
-}
-.part4{
-  position: absolute;
-  top:160%;
-  right: 15%;
-  width: 20%;
-}
-.part5{
-  position: absolute;
-  top:190%;
-  right: 5%;
-  width: 10%;
-}
-
-.part6{
-  position: absolute;
-  top:240%;
-  right: 5%;
-  width: 10%;
-}
-
-
-
+/* PAGE IDENTITÉ */
 .text-separator{font-family: 'Everett', sans-serif;text-align:left;font-size: 90px;line-height: 90px;letter-spacing:-2px;text-transform: uppercase;}
+
+/* PAGE PROJET */
+.projet_text_titre{font-family: 'Everett', sans-serif;text-align:left;font-size: 95px;line-height: 85pxauto;letter-spacing:-4px;text-transform: uppercase;}
+.projet_text_description{font-family: 'Basier',sans-serif;font-size: 20px;line-height: 22px;}
+.projet_text{font-family:'Basier',sans-serif;font-size: 23px;line-height: 28px;font-weight: 100;}
 
 
 /* NOTE: OK  */.text-very-small {font-size:18px; line-height:25px; font-weight: 300;font-style: italic;padding-top:40px}
@@ -104,7 +56,9 @@ img{
 /* NOTE: OK  */.text-nomprojet{font-size:40px; line-height:35px; font-weight:450;letter-spacing: -1px}
 /* NOTE: OK  */.text-infos{font-size:25px;line-height:0px ;font-weight:500;text-align:right;}
 
-.projetintro{padding-top:20px }
+.projet_text_titre{font-family: 'Everett', sans-serif;text-align:left;font-size: 60px;line-height:60px;letter-spacing:-4px;text-transform: uppercase;}
+
+
 
 }
 

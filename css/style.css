@@ -1,5 +1,11 @@
 @charset "UTF-8";
+ 
+*{
+  padding: 0px;
+  margin: 0px;
+  
 
+}
 
 .menu-align{
 z-index: 1;
@@ -241,10 +247,151 @@ padding-top: 10px;
   }
 }
 
+.header_text{
+  font-family:'Basier';
+  font-size: 22px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.card-title{
+  font-family: 'Everett';
+  font-size: 50px;
+  line-height: 55px;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+
+}
 
 
 
+/* NOTE: SCROLL images */
 
+img{
+  width: 10%;
+}
+
+.part2{
+  position: absolute;
+  top:100%;
+  right: 3%;
+  width: 15%;
+}
+.part3{
+  position: absolute;
+  top:160%;
+  right: 5%;
+  width: 15%;
+}
+.part4{
+  position: absolute;
+  top:160%;
+  right: 15%;
+  width: 20%;
+}
+.part5{
+  position: absolute;
+  top:190%;
+  right: 5%;
+  width: 10%;
+}
+
+.part6{
+  position: absolute;
+  top:240%;
+  right: 5%;
+  width: 10%;
+}
+
+
+/* PROJET INFOS*/
+
+.button-infos {
+  width:120px;
+  height:120px;
+  border-radius: 100%;
+  background-color: black;
+  color: white;
+  font-family: 'Everett';
+  font-size: 25px;
+  line-height: 120px;
+  text-align: center;  
+  text-decoration: none!important;
+  text-transform: uppercase;
+  position:fixed;
+  z-index:1;
+  bottom: 5rem;
+  right: 5rem;
+  display: block;
+  transition: all 0.40s ease;
+  transform: scale3d(1, 1, 1) rotate(0deg);
+
+  
+}
+
+.button-infos:hover {
+  transform: scale3d(1.1, 1.1, 1.1) rotate(370deg);
+  cursor: pointer;
+  background-color: white;
+  color:black;
+  box-shadow:  0px 0px 15px  rgb(232, 231, 231) ;
+}
+
+
+@media(max-width:1280px){
+
+  .button_info{
+
+    height:100px;
+    width:100px;
+    bottom: 50px;
+    right: 50px;
+  
+}
+
+
+
+@keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+
+}
 /* ----------------------------------
 
 Name: style.css
@@ -3401,9 +3548,9 @@ aside .search-button {border: 2px solid transparent;}
 
 /* list style 6 */
 .list-style-6 {list-style: none; margin: 0; padding: 0;}
-.list-style-6 li {position: relative; padding: 0 15px 8px 0; margin: 0 0 8px 0; border-bottom: 1px solid rgba(0, 0, 0, 0.1);}
-.list-style-6 li span {position: absolute; top: 3px; right: 0;}
-.list-style-6 li:last-child {border-bottom: none}
+.list-style-6 li {position: relative; padding: 10px 0 10px 0 ; margin: ; border-bottom: 1px solid rgba(0, 0, 0, 0.1); align-items:center;;}
+.list-style-6 li span {position: relative; ; right: 0; float :right ;  align-items:center;}
+.list-style-6 li:last-child {border-bottom: none; padding: 0 0px 10px px ; margin: 0 0 0 0;}
 .list-style-6 li:before {content: "";}
 
 /* list style 7 */
