@@ -15,24 +15,36 @@
 }
 
 
+
 /* HEADER */
 .header_text{font-family:'Basier';font-size: 24px;  padding-left: 15px;  padding-right: 15px;;}
+.text-courant{font-family:'Basier',sans-serif;font-size: 18px;line-height: 22px;}
 
 /* PAGE IDENTITÉ */
 .text-separator{font-family: 'Everett', sans-serif;text-align:left;font-size: 90px;line-height: 90px;letter-spacing:-2px;text-transform: uppercase;}
 
 /* PAGE PROJET */
-.projet_text_titre{font-family: 'Everett', sans-serif;text-align:left;font-size: 95px;line-height: 85pxauto;letter-spacing:-4px;text-transform: uppercase;}
+.projet_text_titre{font-family: 'Everett', sans-serif;text-align:left;font-size: 110px;line-height: 95pxauto;letter-spacing:-4px;}
 .projet_text_description{font-family: 'Basier',sans-serif;font-size: 20px;line-height: 22px;}
-.projet_text{font-family:'Basier',sans-serif;font-size: 23px;line-height: 28px;font-weight: 100;}
+.projet_text{font-family:'Basier',sans-serif;font-size: 18px;line-height: 22px;}
 
+
+/* INDEX */
+.index_titre_projet{font-family: 'Everett', sans-serif; font-size:80px; line-height:70px;letter-spacing:-3px }
+.index_description_projet{font-family:'Basier', sans-serif; font-size:22px; line-height:50px;}
+.index_filtre{font-family:'Basier', sans-serif; font-size:18px; line-height:20px;}
+
+
+/* NOTRE METHODO */
+.methodo_chiffre{font-family: 'Everett', sans-serif;text-align:left;font-size: 150px; line-height: auto;}
+.methodo_titre{font-family: 'Everett', sans-serif;text-align:left;font-size: 60px; line-height: 55px;text-transform: uppercase;letter-spacing: -3px;}
+.nous_text{font-family:'Basier',sans-serif;font-size: 22px;line-height: 29px;}
 
 /* NOTE: OK  */.text-very-small {font-size:18px; line-height:25px; font-weight: 300;font-style: italic;padding-top:40px}
 /* NOTE: OK  */.text-small {font-size:22px; line-height:50px; font-weight: 300}
-/* NOTE: OK  */.text-nomprojet{font-size:60px; line-height:68px; font-weight:450;letter-spacing:-3px }
 /* NOTE: OK  */.text-titre{font-size:100px; line-height:90px; font-weight:600;letter-spacing:-3px;}
 /* NOTE: OK  */.text-courant-info{font-size:18px; line-height:25px;font-weight:400;}
-/* NOTE: OK  */.text-courant{font-family: 'Basier';font-size:20px; line-height:28px;letter-spacing: -1px;}
+/* NOTE: OK  */
 /* NOTE: OK  */.text-logo{font-size:30px; line-height:0px;font-weight:500;text-align:left;}
 /* NOTE: OK  */.text-PN{font-size:32px; line-height:30px;font-weight:400;;}
 /* NOTE: OK  */.text-footer{font-size:50px; line-height:40px;font-weight:400;color:white;decoration:none}
@@ -80,11 +92,3 @@
 
   .logo_svg {width:150px}
 
-
-  @media(max-width:769px){
-
-    /* NOTE: OK  */.text-logo{font-size:25px;line-height:0px ;font-weight:500;text-align:left;}
-        /* NOTE: OK  */.text-infos{font-size:25px;line-height:0px ;font-weight:500;text-align:right;}
-
-
-  }

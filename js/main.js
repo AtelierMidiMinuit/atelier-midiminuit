@@ -1,4 +1,10 @@
-
+$( ".button-open" ).click(function() {
+    $(".section-overlay").addClass( "active" );
+  });
+  
+  $( ".button-close" ).click(function() {
+    $(".section-overlay").removeClass( "active" );
+  });
 (function ($) {
 
     "use strict";
