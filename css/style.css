@@ -285,20 +285,20 @@ img{
 }
 .part4{
   position: absolute;
-  top:160%;
+  top:280%;
   right: 15%;
   width: 20%;
 }
 .part5{
   position: absolute;
-  top: 210%;
-  right: 31%;
+  top: 230%;
+  right: 1%;
   width: 15%;
 }
 
 .part6{
   position: absolute;
-  top:300%;
+  top:400%;
   right: 0%;
   width: 30%;
 }
@@ -397,11 +397,11 @@ img{
   line-height: 6.75rem;
   color:white;
   text-align: center;
-  letter-spacing: -7px;
+  letter-spacing: -4px;
   position: sticky;
   top: 100px;
   padding:50px 0px 50px 0px;
-  
+  text-transform: uppercase;
 }
 
 
