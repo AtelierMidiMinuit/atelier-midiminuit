@@ -273,32 +273,36 @@ img{
 
 .part2{
   position: absolute;
-  top:100%;
+  top:100vh;
   right: 3%;
   width: 15%;
 }
 .part3{
   position: absolute;
-  top:160%;
+  top:160vh;
   right: 8%;
   width: 15%;
 }
 .part4{
   position: absolute;
-  top:280%;
+<<<<<<< HEAD
+  top:280vh;
+=======
+  top:160%;
+>>>>>>> parent of 598ff6c (31 JAN)
   right: 15%;
   width: 20%;
 }
 .part5{
   position: absolute;
-  top: 230%;
-  right: 1%;
+  top: 210%;
+  right: 31%;
   width: 15%;
 }
 
 .part6{
   position: absolute;
-  top:400%;
+  top:300%;
   right: 0%;
   width: 30%;
 }
@@ -397,11 +401,11 @@ img{
   line-height: 6.75rem;
   color:white;
   text-align: center;
-  letter-spacing: -4px;
+  letter-spacing: -7px;
   position: sticky;
   top: 100px;
   padding:50px 0px 50px 0px;
-  text-transform: uppercase;
+  
 }
 
 

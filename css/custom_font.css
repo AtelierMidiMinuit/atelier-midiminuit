@@ -40,17 +40,6 @@
 .methodo_titre{font-family: 'Everett', sans-serif;text-align:left;font-size: 60px; line-height: 55px;text-transform: uppercase;letter-spacing: -3px;}
 .nous_text{font-family:'Basier',sans-serif;font-size: 22px;line-height: 29px;}
 
-/* NOTE: OK  */.text-very-small {font-size:18px; line-height:25px; font-weight: 300;font-style: italic;padding-top:40px}
-/* NOTE: OK  */.text-small {font-size:22px; line-height:50px; font-weight: 300}
-/* NOTE: OK  */.text-titre{font-size:100px; line-height:90px; font-weight:600;letter-spacing:-3px;}
-/* NOTE: OK  */.text-courant-info{font-size:18px; line-height:25px;font-weight:400;}
-/* NOTE: OK  */
-/* NOTE: OK  */.text-logo{font-size:30px; line-height:0px;font-weight:500;text-align:left;}
-/* NOTE: OK  */.text-PN{font-size:32px; line-height:30px;font-weight:400;;}
-/* NOTE: OK  */.text-footer{font-size:50px; line-height:40px;font-weight:400;color:white;decoration:none}
-/* NOTE: OK  */.text-index{font-size:70px; line-height:40px;font-weight:400;}
-/* NOTE: OK  */.text-infos{font-size:30px; line-height:0px;font-weight:500;text-align:right;}
-
 
 /* ===================================
                  xs
@@ -68,7 +57,7 @@
 /* NOTE: OK  */.text-nomprojet{font-size:40px; line-height:35px; font-weight:450;letter-spacing: -1px}
 /* NOTE: OK  */.text-infos{font-size:25px;line-height:0px ;font-weight:500;text-align:right;}
 
-.projet_text_titre{font-family: 'Everett', sans-serif;text-align:left;font-size: 60px;line-height:60px;letter-spacing:-2px;text-transform:;}
+.projet_text_titre{font-family: 'Everett', sans-serif;text-align:left;font-size: 60px;line-height:60px;letter-spacing:-4px;text-transform: uppercase;}
 
 
 
