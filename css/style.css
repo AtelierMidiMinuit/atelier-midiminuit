@@ -414,7 +414,24 @@ img{
 ====================================== */
 
 @media only screen and (min-width: 1200px) {
-  .mantra {padding: 120px;}
+  .mantra {padding:50px 100px;}
+}
+
+
+/* ===================================
+          1400px UP
+====================================== */
+
+@media only screen and (min-width: 1400px) {
+  .mantra {padding:100px 200px;}
+}
+
+/* ===================================
+          2000px UP
+====================================== */
+
+@media only screen and (min-width: 2000px) {
+  .mantra {padding:100px 200px;}
 }
 
 
