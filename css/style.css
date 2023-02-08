@@ -3,16 +3,15 @@
 *{
   padding: 0px;
   margin: 0px;
-  
+  transition: all 0.40s ease, visibility 0s;
 
 }
 
 .menu-align{
 z-index: 1;
 padding-top: 10px;
-  padding-bottom: 20px;
-
-    padding-left: 40px;
+padding-bottom: 20px;
+padding-left: 40px;
 
 }
 
@@ -22,11 +21,8 @@ padding-top: 10px;
   padding: 16px;
   font-size: 18px;
   border: none;
-
   text-align: left;
-
   min-width: 100px;
-
   margin: 0 auto;
 }
 
@@ -38,10 +34,8 @@ padding-top: 10px;
 
 .dropdown-content {
   display: none;
-
   text-align: left;
   position: absolute;
-
   background-color: black;
   color:white;
   min-width: 300px;
@@ -229,7 +223,6 @@ padding-top: 10px;
     margin-right: 100px;
     text-align: left;
   }
-}
 
 @media and all (max-width: 1200px) {
   .scrolling-wrapper {
@@ -244,7 +237,6 @@ padding-top: 10px;
       max-width: none;
     }
   }
-}
 
 .header_text{
   font-family:'Basier';
@@ -259,7 +251,6 @@ padding-top: 10px;
   line-height: 50px;
   text-transform: uppercase;
   letter-spacing: -2px;
-
 }
 
 
@@ -322,10 +313,7 @@ img{
   bottom: 5rem;
   right: 5rem;
   display: block;
-  transition: all 0.40s ease;
   transform: scale3d(1, 1, 1) rotate(0deg);
-
-  
 }
 
 .button-infos:hover {
@@ -338,14 +326,11 @@ img{
 
 .button-open{}
 @media(max-width:1280px){
-
   .button_info{
-
     height:100px;
     width:100px;
     bottom: 50px;
     right: 50px;
-  
 }
 }
 
@@ -359,7 +344,6 @@ img{
   background-color: black;
   color:white;
   visibility: hidden;
-  transition: opacity 0.2s linear;
   
   
 }
@@ -377,6 +361,8 @@ img{
   position: fixed;
   font-size: 50px;
   cursor: pointer;
+
+  transition: all 0.40s ease;
 }
 
 .section-overlay.active {
@@ -401,13 +387,64 @@ img{
   
 }
 
+.flex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.itemss {
+  position: relative;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  will-change: transform;
+  user-select: none;
+  cursor: pointer;
+}
+
+.itemss.active {
+  background: rgba(255,255,255,0.3);
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
+
+.logo_svg{
+  width: 150px;
+  transition: all 0.40s ease;}
+
+header{padding:20px}
+
+
+
 /* ===================================
           576px UP
 ====================================== */
 
 @media only screen and (min-width: 576px) {
-  .mantra {padding: 50px;}
+  .mantra {padding: 40px;}
+  .logo_svg{width: 150px}
+  header{padding:40px}
 }
+
+
+
+/* ===================================
+          7px UP
+====================================== */
+
+@media only screen and (max-width: 767px) {
+  .button-infos {width: 95px;  height: 95px;  font-size: 20px;  line-height: 95px;  bottom: 2.5rem;  right: 2.5rem;}
+  .content-overlay {padding:40px 20px 40px 20px;height:100%; overflow: scroll ;}
+  .button-close p {top: 2rem;right: 2rem;position: fixed;font-size: 30px;cursor: pointer;}
+  section a div p{line-height: 20px;}
+}
+
+
 
 /* ===================================
           1200px UP
@@ -415,15 +452,17 @@ img{
 
 @media only screen and (min-width: 1200px) {
   .mantra {padding:50px 100px;}
+  .logo_svg{width: 200px}
 }
 
 
 /* ===================================
-          1400px UP
+          1600px UP
 ====================================== */
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1600px) {
   .mantra {padding:100px 200px;}
+  .logo_svg{width: 250px}
 }
 
 /* ===================================
@@ -431,7 +470,7 @@ img{
 ====================================== */
 
 @media only screen and (min-width: 2000px) {
-  .mantra {padding:100px 200px;}
+  .mantra {padding:150px 200px;}
 }
 
 
@@ -479,7 +518,7 @@ Table of contents
     02. Reset
 ====================================== */
 html {font-size: 15px;}
-body {font-family: 'Roboto', sans-serif; -webkit-font-smoothing: antialiased; font-smoothing: antialiased; font-size:14px; color:#6f6f6f; font-weight: 400;line-height: 24px;}
+body {font-family: 'Basier', sans-serif; -webkit-font-smoothing: antialiased; font-smoothing: antialiased; font-size:14px; color:#6f6f6f; font-weight: 400;line-height: 24px;}
 body, html {height: 100%; -moz-osx-font-smoothing: grayscale;}
 a, a:active, a:focus {color: #6f6f6f; text-decoration: none;}
 a:hover, a:active{color: var(--base-color); text-decoration: none;}

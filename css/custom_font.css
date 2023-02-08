@@ -14,6 +14,15 @@
   font-style: normal;
 }
 
+.text-footer{font-family:'Basier',sans-serif;font-size: 22px;line-height: 29px;text-align: center;}
+  
+  
+  /* NOTRE METHODO */
+  .methodo_chiffre{font-family: 'Everett', sans-serif;text-align:left;font-size: 150px; line-height: auto;}
+  .methodo_titre{font-family: 'Everett', sans-serif;text-align:left;font-size: 60px; line-height: 55px;text-transform: uppercase;letter-spacing: -3px;}
+  .text-separator{font-family: 'Everett', sans-serif;text-align:left;font-size: 90px;line-height: 90px;letter-spacing:-2px;text-transform: uppercase;}
+  
+  
 
 /* ===================================
           xs : 576px DOWN
@@ -36,7 +45,8 @@
   .index_description_projet{font-family:'Basier', sans-serif; font-size:16px; line-height:20px;}
   .index_filtre{font-family:'Basier', sans-serif; font-size:18px; line-height:20px;padding-top:10px;}
   .mantra{font-family: 'Everett', sans-serif;font-size: 45px; line-height: 44px;letter-spacing: -2px; padding: 40px;}
-  }
+  
+}
   
 
 /* ===================================
@@ -50,7 +60,7 @@
   .text-courant{font-family:'Basier',sans-serif;font-size: 16px;line-height: 20px;}
   
   /* PAGE PROJET */
-  .projet_text_titre{font-family: 'Everett', sans-serif;text-align:left;font-size:100px; line-height:80px;letter-spacing:-2px;}
+  .projet_text_titre{font-family: 'Everett', sans-serif;text-align:left;font-size:95px; line-height:80px;letter-spacing:-2px;}
   .projet_text_description{font-family: 'Basier',sans-serif;font-size: 15px;line-height: 20px;}
   .projet_text{font-family:'Basier',sans-serif;font-size: 16px;line-height: 20px;}
   
@@ -59,7 +69,7 @@
   .index_titre_projet{font-size:110px; line-height:90px;letter-spacing:-4px }
   .index_description_projet{font-family:'Basier', sans-serif; font-size:20px; line-height:40px;}
   .index_filtre{font-family:'Basier', sans-serif; font-size:18px; line-height:20px;padding-top:10px;}
-  .mantra{font-family: 'Everett', sans-serif;font-size: 70px; line-height: 60px;}
+  .mantra{font-family: 'Everett', sans-serif;font-size: 70px; line-height: 60px;letter-spacing: -4px;}
   }
   
 
@@ -78,7 +88,6 @@
   .text-courant{font-family:'Basier',sans-serif;font-size: 20px;line-height: 23px;}
   
   /* PAGE IDENTITÉ */
-  .text-separator{font-family: 'Everett', sans-serif;text-align:left;font-size: 90px;line-height: 90px;letter-spacing:-2px;text-transform: uppercase;}
   
   /* PAGE PROJET */
   .projet_text_titre{font-family: 'Everett', sans-serif;text-align:left;font-size: 110px;line-height: 95pxauto;letter-spacing:-4px;}
@@ -91,12 +100,7 @@
   .index_description_projet{font-family:'Basier', sans-serif; font-size:22px; line-height:50px;}
   .index_filtre{font-family:'Basier', sans-serif; font-size:18px; line-height:20px;}
   .mantra{font-size: 100px;line-height: 90px;letter-spacing: -7px}
-  
-  
-  /* NOTRE METHODO */
-  .methodo_chiffre{font-family: 'Everett', sans-serif;text-align:left;font-size: 150px; line-height: auto;}
-  .methodo_titre{font-family: 'Everett', sans-serif;text-align:left;font-size: 60px; line-height: 55px;text-transform: uppercase;letter-spacing: -3px;}
-  .nous_text{font-size: 12px;line-height: 29px;}
+
   }
   
 
@@ -106,7 +110,7 @@
           1400px UP
 ====================================== */
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1600px) {
   
   /* INDEX */
   .index_titre_projet{font-family: 'Everett', sans-serif; font-size:100px; line-height:80px;letter-spacing:-3px }
@@ -120,17 +124,10 @@
 
 .row-w{
   width:100%;
-
-
 }
 
-.logo_svg{
-  width:200px;
-}
 @media(max-width:1280px){
-
   .grid.grid-6col li { width: 100%; }
   .grid.grid-6col li.grid-item-4 { width: 100%; }
-
-  .logo_svg {width:150px}
+}
 

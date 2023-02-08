@@ -1,3 +1,18 @@
+
+/*——————————————————————————————————
+------  drag scroll ---------
+——————————————————————————————————*/
+
+
+
+
+
+
+
+/*——————————————————————————————————
+------ INFO BUTTON OVERLAY ---------
+——————————————————————————————————*/
+
 $( ".button-open" ).click(function() {
     $(".section-overlay").addClass( "active" );
   });
@@ -5,6 +20,17 @@ $( ".button-open" ).click(function() {
   $( ".button-close" ).click(function() {
     $(".section-overlay").removeClass( "active" );
   });
+
+
+
+
+
+/*——————————————————————————————————
+------ JE SAIS PAS ---------
+——————————————————————————————————*/
+
+
+
 (function ($) {
 
     "use strict";
