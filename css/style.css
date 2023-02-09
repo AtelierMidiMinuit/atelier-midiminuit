@@ -4,8 +4,9 @@
   padding: 0px;
   margin: 0px;
   transition: all 0.40s ease, visibility 0s;
-
+  scroll-behavior: smooth;
 }
+
 
 .menu-align{
 z-index: 1;
@@ -102,6 +103,7 @@ padding-left: 40px;
 
 .image-hover-text .image-hover-text-title{
   display: block;
+  text-align: center;
 }
 
 .bloc_text_left {
@@ -405,12 +407,15 @@ img{
   will-change: transform;
   user-select: none;
   cursor: pointer;
+  scroll-behavior: auto;
 }
 
 .itemss.active {
   background: rgba(255,255,255,0.3);
   cursor: grabbing;
   cursor: -webkit-grabbing;
+
+  scroll-behavior: auto;
 }
 
 .logo_svg{

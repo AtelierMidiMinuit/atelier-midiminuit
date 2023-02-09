@@ -140,14 +140,22 @@
   <div class="container-fluid">
     <div class="row text-black">
 
-      <img class="col-md-12 padding-one-tb padding-two-lr no-padding wow animate__animated animate__slideInUp  "  src="img/NSE_1.jpg" />
-      <img class="col-md-6 padding-two-all wow animate__animated animate__slideInUp"  src="img/NSE_1.png" />
-      <div class="col-md-6 wow animate__animated animate__slideInUp " data-wow-delay="0.4s" style="padding:7%"> <p class="text-courant wow animate__animated animate__slideInUp">Au sein de l'agence elle&la, ils nous ont confié la réalisation du compte rendu de cette consultation, sous la forme d’un livre blanc.<br>Entre esprit de synthèse et restitutions des idées de chacun, le projet a été l’occasion de mettre en place une maquette rigoureuse et dynamique. </p> </div>
-      <img class="col-md-12 no-padding wow animate__animated animate__slideInUp"  src="img/NSE_111.jpg" />
-      <div class="col-md-12" style="background-color:#ededed"> <img class="col-md-10 col-md-offset-1" src="img/NSE_3.png" alt="">     </div>
-      <div class="col-md-12" style="background-color:#3ca590"> <img class="col-md-10 col-md-offset-1" src="img/NSE_4.png" alt="">     </div>
-      <img class="col-md-12 no-padding wow animate__animated animate__slideInUp"  src="img/NSE_2.jpg" />
-       
+      <img class="wow animate__animated animate__fadeInUp col-md-12 padding-one-tb padding-two-lr"  src="img/NSE_1.jpg" />
+      <!-- start portfolio slider section -->
+      <section class="wow animate__fadeInUp animate__animated coolscrollbar col-md-12 no-padding" style="display: flex;overflow-x: auto; flex-wrap: nowrap; background-color:white;  cursor: url('../double.svg') 30 30, auto; overflow-x: scroll;;">
+        <div class="itemss" style="padding-bottom: 2%">
+            <img class="" draggable="false" ondragstart="return false;" src="img/NSE_01.jpg" alt="" style="width: 90%;  flex: 0 0 auto; margin:0% 0% 0% 1%;"/>
+            <img class="" draggable="false" ondragstart="return false;" src="img/NSE_02.jpg" alt="" style="width: 90%;  flex: 0 0 auto; margin:0 1% 0 2%;"/>
+            <img class="" draggable="false" ondragstart="return false;" src="img/NSE_05.jpg" alt="" style="width: 90%;  flex: 0 0 auto; margin:0 1% 0 1%;"/>
+            <img class="" draggable="false" ondragstart="return false;" src="img/NSE_03.jpg" alt="" style="width: 90%;  flex: 0 0 auto; margin:0 2% 0 1%;"/>
+            <img class="" draggable="false" ondragstart="return false;" src="img/NSE_04.jpg" alt="" style="width: 90%;  flex: 0 0 auto; margin:0 1% 0 0%;"/>
+            <img class="" draggable="false" ondragstart="return false;" src="img/NSE_06.jpg" alt="" style="width: 90%;  flex: 0 0 auto; margin:0 1% 0 0%;"/>
+          </div>
+      </section>
+<!-- end portfolio slider section -->
+      
+      <div class="wow animate__animated animate__fadeInUp col-md-12 padding-two-top padding-two-lr " style="background-color:#63b7a6"> <img class="col-md-10 col-md-offset-1 padding-one-tb padding-two-lr" src="img/NSE_3.png" alt="">     </div>
+        
     </div>
 
     </div>
@@ -186,11 +194,36 @@
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-    <!-- javascript libraries -->
-
-
 
                                                                 <!-- javascript libraries -->
+                                                                <script>const slider = document.querySelector('.itemss');
+                                                                  let isDown = false;
+                                                                  let startX;
+                                                                  let scrollLeft;
+                                                                  
+                                                                  slider.addEventListener('mousedown', (e) => {
+                                                                    isDown = true;
+                                                                    slider.classList.add('active');
+                                                                    startX = e.pageX - slider.offsetLeft;
+                                                                    scrollLeft = slider.scrollLeft;
+                                                                  });
+                                                                  slider.addEventListener('mouseleave', () => {
+                                                                    isDown = false;
+                                                                    slider.classList.remove('active');
+                                                                  });
+                                                                  slider.addEventListener('mouseup', () => {
+                                                                    isDown = false;
+                                                                    slider.classList.remove('active');
+                                                                  });
+                                                                  slider.addEventListener('mousemove', (e) => {
+                                                                    if(!isDown) return;
+                                                                    e.preventDefault();
+                                                                    const x = e.pageX - slider.offsetLeft;
+                                                                    const walk = (x - startX) * 3; //scroll-fast
+                                                                    slider.scrollLeft = scrollLeft - walk;
+                                                                    console.log(walk);
+                                                                  });
+                                                                  </script>
                                                                 <script type="text/javascript" src="js/jquery.js"></script>
                                                                 <script type="text/javascript" src="js/modernizr.js"></script>
                                                                 <script type="text/javascript" src="js/bootstrap.min.js"></script>
