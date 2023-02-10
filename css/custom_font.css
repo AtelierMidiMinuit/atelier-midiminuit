@@ -107,7 +107,7 @@
 
 
 /* ===================================
-          1400px UP
+          1600px UP
 ====================================== */
 
 @media only screen and (min-width: 1600px) {
@@ -116,7 +116,7 @@
   .index_titre_projet{font-family: 'Everett', sans-serif; font-size:100px; line-height:80px;letter-spacing:-3px }
   .index_description_projet{font-family:'Basier', sans-serif; font-size:22px; line-height:50px;}
   .index_filtre{font-family:'Basier', sans-serif; font-size:18px; line-height:20px;}
-  .mantra{font-size: 130px;line-height: 110px;letter-spacing: -7px}
+  .mantra{font-size: 110px;line-height: 95px;letter-spacing: -7px}
 
   }
   

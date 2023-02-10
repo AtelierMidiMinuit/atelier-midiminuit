@@ -3,7 +3,6 @@
 *{
   padding: 0px;
   margin: 0px;
-  transition: all 0.40s ease, visibility 0s;
   scroll-behavior: smooth;
 }
 
@@ -396,6 +395,8 @@ img{
   justify-content: space-between;
 }
 
+
+
 .itemss {
   position: relative;
   width: 100%;
@@ -410,13 +411,32 @@ img{
   scroll-behavior: auto;
 }
 
-.itemss.active {
-  background: rgba(255,255,255,0.3);
+.itemsss.active {
   cursor: grabbing;
   cursor: -webkit-grabbing;
-
   scroll-behavior: auto;
 }
+
+.itemsss {
+  position: relative;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  will-change: transform;
+  user-select: none;
+  cursor: pointer;
+  scroll-behavior: auto;
+}
+
+.itemss.active {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  scroll-behavior: auto;
+}
+
+
 
 .logo_svg{
   width: 150px;
