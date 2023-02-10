@@ -1,58 +1,133 @@
-/* NOTE: OK  */.text-very-small {font-size:18px; line-height:25px; font-weight: 300;font-style: italic;padding-top:40px}
-/* NOTE: OK  */.text-small {font-size:22px; line-height:50px; font-weight: 300}
-/* NOTE: OK  */.text-nomprojet{font-size:60px; line-height:68px; font-weight:450;letter-spacing:-3px }
-/* NOTE: OK  */.text-titre{font-size:100px; line-height:90px; font-weight:600;letter-spacing:-3px;}
-/* NOTE: OK  */.text-courant-info{font-size:18px; line-height:25px;font-weight:400;}
-/* NOTE: OK  */.text-courant{font-size:20px; line-height:28px;font-weight:400;}
-/* NOTE: OK  */.text-logo{font-size:30px; line-height:0px;font-weight:500;text-align:left;}
-/* NOTE: OK  */.text-PN{font-size:32px; line-height:30px;font-weight:400;;}
-/* NOTE: OK  */.text-footer{font-size:50px; line-height:40px;font-weight:400;color:white;decoration:none}
-/* NOTE: OK  */.text-index{font-size:70px; line-height:40px;font-weight:400;}
-/* NOTE: OK  */.text-infos{font-size:30px; line-height:0px;font-weight:500;text-align:right;}
-
-.t300{font-weight:300}
-.t400{font-weight:400}
-.t450{font-weight:450}
-.t500{font-weight:500}
-.t600{font-weight:600}
-
-/* ===================================
-                 xs
-====================================== */
-
-@media(max-width:1280px){
-
-/* NOTE: OK  */.text-very-small {font-size:15px; line-height:20px; font-weight: 300;font-style: italic; padding-top:40px}
-/* NOTE: OK  */.text-small { font-size:12px; line-height:30px }
-/* NOTE: OK  */.text-titre{font-size:55px; line-height:48px; font-weight:400;}
-/* NOTE: OK  */.text-courant{font-size:18px; line-height:26px;font-weight:350;}
-/* NOTE: OK  */.text-logo{font-size:25px;line-height:0px ;font-weight:500;text-align:left;}
-/* NOTE: OK  */.text-PN{font-size:20px; line-height:40px;font-weight:400;}
-/* NOTE: OK  */.text-footer{font-size:35px; line-height:40px;font-weight:400;;}
-/* NOTE: OK  */.text-nomprojet{font-size:40px; line-height:35px; font-weight:450;letter-spacing: -1px}
-/* NOTE: OK  */.text-infos{font-size:25px;line-height:0px ;font-weight:500;text-align:right;}
-
-.projetintro{padding-top:20px }
-
+@font-face {
+  font-family: 'Everett';
+  src: url(../font/Everett-Regular.otf);
+  font-weight: 300;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: 'Basier';
+  src: url(../font/basiercircle-regular-webfont.woff2);
+  src: url(../font/basiercircle-regular-webfont.woff);
+  src: url(../font/basiercircle-regular-webfont.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
 
+.text-footer{font-family:'Basier',sans-serif;font-size: 22px;line-height: 29px;text-align: center;}
+  
+  
+  /* NOTRE METHODO */
+  .methodo_chiffre{font-family: 'Everett', sans-serif;text-align:left;font-size: 150px; line-height: auto;}
+  .methodo_titre{font-family: 'Everett', sans-serif;text-align:left;font-size: 60px; line-height: 55px;text-transform: uppercase;letter-spacing: -3px;}
+  .text-separator{font-family: 'Everett', sans-serif;text-align:left;font-size: 90px;line-height: 90px;letter-spacing:-2px;text-transform: uppercase;}
+  
+  
+
+/* ===================================
+          xs : 576px DOWN
+====================================== */
+
+@media only screen and (max-width:576px) {
+  
+  /* HEADER */
+  .header_text{font-family:'Basier';font-size: 16px; line-height: 20px;  padding-left: 15px;  padding-right: 15px;;}
+  .text-courant{font-family:'Basier',sans-serif;font-size: 16px;line-height: 20px;}
+  
+  /* PAGE PROJET */
+  .projet_text_titre{font-family: 'Everett', sans-serif;text-align:left;font-size: 50px;line-height: 55px;;letter-spacing:-2px;}
+  .projet_text_description{font-family: 'Basier',sans-serif;font-size: 15px;line-height: 20px;}
+  .projet_text{font-family:'Basier',sans-serif;font-size: 16px;line-height: 20px;}
+  
+  
+  /* INDEX */
+  .index_titre_projet{font-family: 'Everett', sans-serif; font-size:60px; line-height:60px;letter-spacing:-3px }
+  .index_description_projet{font-family:'Basier', sans-serif; font-size:16px; line-height:20px;}
+  .index_filtre{font-family:'Basier', sans-serif; font-size:18px; line-height:20px;padding-top:10px;}
+  .mantra{font-family: 'Everett', sans-serif;font-size: 45px; line-height: 44px;letter-spacing: -2px; padding: 40px;}
+  
+}
+  
+
+/* ===================================
+          xs : 576px UP
+====================================== */
+
+@media only screen and (min-width:576px) {
+  
+  /* HEADER */
+  .header_text{font-family:'Basier';font-size: 16px; line-height: 20px;  padding-left: 15px;  padding-right: 15px;;}
+  .text-courant{font-family:'Basier',sans-serif;font-size: 16px;line-height: 20px;}
+  
+  /* PAGE PROJET */
+  .projet_text_titre{font-family: 'Everett', sans-serif;text-align:left;font-size:95px; line-height:80px;letter-spacing:-2px;}
+  .projet_text_description{font-family: 'Basier',sans-serif;font-size: 15px;line-height: 20px;}
+  .projet_text{font-family:'Basier',sans-serif;font-size: 16px;line-height: 20px;}
+  
+  
+  /* INDEX */
+  .index_titre_projet{font-size:110px; line-height:90px;letter-spacing:-4px }
+  .index_description_projet{font-family:'Basier', sans-serif; font-size:20px; line-height:40px;}
+  .index_filtre{font-family:'Basier', sans-serif; font-size:18px; line-height:20px;padding-top:10px;}
+  .mantra{font-family: 'Everett', sans-serif;font-size: 70px; line-height: 60px;letter-spacing: -4px;}
+  }
+  
+
+
+
+
+/* ===================================
+          1200px UP
+====================================== */
+
+@media only screen and (min-width: 1200px) {
+
+
+  /* HEADER */
+  .header_text{font-family:'Basier';font-size: 20px; line-height: 30px;  padding-left: 15px;  padding-right: 15px;;}
+  .text-courant{font-family:'Basier',sans-serif;font-size: 20px;line-height: 23px;}
+  
+  /* PAGE IDENTITÉ */
+  
+  /* PAGE PROJET */
+  .projet_text_titre{font-family: 'Everett', sans-serif;text-align:left;font-size: 110px;line-height: 95px;letter-spacing:-4px;}
+  .projet_text_description{font-family: 'Basier',sans-serif;font-size: 22px;line-height: 24px;}
+  .projet_text{font-family:'Basier',sans-serif;font-size: 18px;line-height: 23px;}
+  
+  
+  /* INDEX */
+  .index_titre_projet{font-family: 'Everett', sans-serif; font-size:80px; line-height:70px;letter-spacing:-3px }
+  .index_description_projet{font-family:'Basier', sans-serif; font-size:22px; line-height:50px;}
+  .index_filtre{font-family:'Basier', sans-serif; font-size:18px; line-height:20px;}
+  .mantra{font-size: 100px;line-height: 90px;letter-spacing: -7px}
+
+  }
+  
+
+
+
+/* ===================================
+          1600px UP
+====================================== */
+
+@media only screen and (min-width: 1600px) {
+  
+  /* INDEX */
+  .index_titre_projet{font-family: 'Everett', sans-serif; font-size:100px; line-height:80px;letter-spacing:-3px }
+  .index_description_projet{font-family:'Basier', sans-serif; font-size:22px; line-height:50px;}
+  .index_filtre{font-family:'Basier', sans-serif; font-size:18px; line-height:20px;}
+  .mantra{font-size: 110px;line-height: 95px;letter-spacing: -7px}
+
+  }
+  
+  
 
 .row-w{
   width:100%;
-
-
 }
-@media(max-width:1280px){
 
+@media(max-width:1280px){
   .grid.grid-6col li { width: 100%; }
   .grid.grid-6col li.grid-item-4 { width: 100%; }
+}
 
-
-  @media(max-width:769px){
-
-    /* NOTE: OK  */.text-logo{font-size:25px;line-height:0px ;font-weight:500;text-align:left;}
-        /* NOTE: OK  */.text-infos{font-size:25px;line-height:0px ;font-weight:500;text-align:right;}
-
-
-  }

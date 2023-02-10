@@ -1,2 +1,0 @@
-# atelier-midiminuit
- site
