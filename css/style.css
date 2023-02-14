@@ -388,6 +388,11 @@ img{
   
 }
 
+.mantra p{
+  display: inline-block;
+  max-width: 80%;
+}
+
 .flex{
   display: flex;
   flex-direction: row;
@@ -428,6 +433,10 @@ img{
   user-select: none;
   cursor: pointer;
   scroll-behavior: auto;
+  -webkit-scrollbar {
+    display: none};
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 .itemss.active {
@@ -486,7 +495,7 @@ header{padding:20px}
 ====================================== */
 
 @media only screen and (min-width: 1600px) {
-  .mantra {padding:100px 200px;}
+  .mantra {padding:100px 250px;}
   .logo_svg{width: 250px}
 }
 
@@ -495,7 +504,16 @@ header{padding:20px}
 ====================================== */
 
 @media only screen and (min-width: 2000px) {
-  .mantra {padding:150px 200px;}
+  .mantra {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 150px;
+  }
+
+    .mantra p{
+      display: inline-block;
+      max-width: 80%;
+    }
 }
 
 

@@ -120,7 +120,14 @@
 
   }
   
-  
+  /* ===================================
+          2000px UP
+====================================== */
+
+@media only screen and (min-width: 2000px) {
+  .mantra {font-size: 150px;line-height: 125px;letter-spacing: -7px}
+}
+
 
 .row-w{
   width:100%;
