@@ -62,7 +62,7 @@
   /* PAGE PROJET */
   .projet_text_titre{font-family: 'Everett', sans-serif;text-align:left;font-size:95px; line-height:80px;letter-spacing:-2px;}
   .projet_text_description{font-family: 'Basier',sans-serif;font-size: 15px;line-height: 20px;}
-  .projet_text{font-family:'Basier',sans-serif;font-size: 16px;line-height: 20px;}
+  .projet_text{font-family:'Basier',sans-serif;font-size: 16px;line-height: 22px;}
   
   
   /* INDEX */
@@ -92,7 +92,6 @@
   /* PAGE PROJET */
   .projet_text_titre{font-family: 'Everett', sans-serif;text-align:left;font-size: 110px;line-height: 95px;letter-spacing:-4px;}
   .projet_text_description{font-family: 'Basier',sans-serif;font-size: 22px;line-height: 24px;}
-  .projet_text{font-family:'Basier',sans-serif;font-size: 18px;line-height: 23px;}
   
   
   /* INDEX */
